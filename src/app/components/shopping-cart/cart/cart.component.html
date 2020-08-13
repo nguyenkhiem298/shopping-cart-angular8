@@ -1,0 +1,10 @@
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let cart of listCartItem">
+    <app-cart-item [cartItem] = "cart"></app-cart-item>
+  </li>
+
+  <li class="list-group-item active">
+    <strong>Total:  {{ totalMoney | currency: 'USD'}}</strong>
+  </li>
+
+</ul>
